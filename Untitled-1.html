@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        "use strict";
+        let Tc = +prompt("Введите емпературу в градусах по Цельсию ");
+        let Tf = (9 / 5) * Tc + 32;
+        alert(Tf);
+
+        let name = "Василий";
+        let admin = name;
+        alert(admin);
+
+
+        let result1 = 10 + 10 + "10"; //10 прибавляем 10 прибавляем строку 10 получаем undefined
+        console.log(result1);
+
+
+        let result2 = 10 + "10" + 10; //10 прибавляем строку 10 прибавляем 10 получаем 101010
+        console.log(result2);
+
+
+        let result3 = 10 + 10 + +"10";//10 прибавляем 10 прибавляем прибавляем строку 10 получаем uninitialized
+        console.log(result3);
+
+
+        let result4 = 10 / -"";//10 делим вычитаем пустоту получаем undefined
+        console.log(result4);
+
+        let result5 = 10 / +"2,5";//10 делим прибавляем 2,5 получаем undefined
+        console.log(result5);
+
+    </script>
+</body>
+
+</html>
